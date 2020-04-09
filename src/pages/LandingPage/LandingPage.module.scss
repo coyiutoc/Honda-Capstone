@@ -1,7 +1,55 @@
-.landingPage {
+@import "styles/partials/_colors.scss";
+
+.headingContainer {
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 95vh;
+  text-align: center;
+  width: 60vw;
+  top: 30vh;
+  z-index: 1;
+}
+
+.backgroundContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+}
+
+.headingText {
+  margin: 2rem 0;
+}
+
+.bgImg {
+  position: absolute;
+  &__star{
+    @extend .bgImg;
+    top: 30vh;
+    right: 0;
+  }
+
+  &__squiggly{
+    @extend .bgImg;
+    top: 40vh;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $color-background-blue;
+}
+
+.buffer {
+  height: 12rem;
 }

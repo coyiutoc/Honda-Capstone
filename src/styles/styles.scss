@@ -1,15 +1,20 @@
+@import "./partials/typography.scss";
+
 body, html {
-  font-family: 'Lato', 'sans-serif';
-  background-color: black;
+  font-family: Telegraf;
+  margin: 0;
   button {
     outline: none;
   }
 }
 
 html {
-  color: white;
   font-size: 16px;
   scroll-behavior: smooth;
+}
+
+h1, h2 {
+  margin: 0;
 }
 
 h1 {
@@ -17,10 +22,18 @@ h1 {
 }
 
 h2 {
-  font-size: 5rem;
-  margin: 0;
+  font-size: 4rem;
+  font-weight: normal;
 }
 
 p {
   font-size: 1.2rem;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

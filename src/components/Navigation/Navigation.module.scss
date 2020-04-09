@@ -1,0 +1,33 @@
+@import "styles/partials/_margins.scss";
+@import "styles/partials/_colors.scss";
+
+.container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem $nav-margin-horizontal;
+  align-items: center;
+  z-index: 10;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.2s ease;
+    &:hover{
+      color: $color-blue;
+    }
+}
+
+.link {
+  &__home {
+    flex: 1;
+  }
+
+  &__process {
+    margin-right: 4rem;
+  }
+}

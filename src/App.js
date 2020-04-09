@@ -5,19 +5,28 @@ import {
   Route,
 } from "react-router-dom";
 
-import LandingPage from "./pages/LandingPage/LandingPage.js";
+import LandingPage from "pages/LandingPage/LandingPage.js";
+import Navigation from "components/Navigation/Navigation.js";
+import Footer from "components/Footer/Footer.js";
+import routes from "routes.js";
 
 function App() {
   return (
     <Router>
       <div>
-        {/* <Navigation /> */}
+        <Navigation />
         <Switch>
-          <Route exact path = "/">
+          <Route exact path={routes.home}>
             <LandingPage />     
           </Route>
+          <Route exact path={routes.process}>
+            <div className="container">PROCESS PAGE</div>
+          </Route>
+          <Route exact path={routes.team}>
+            <div className="container">TEAM PAGE</div>
+          </Route>
         </Switch>
-        {/* </Footer /> */}
+        <Footer />
       </div>
     </Router>
   );

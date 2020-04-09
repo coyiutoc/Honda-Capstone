@@ -1,0 +1,9 @@
+@import "styles/partials/_margins.scss";
+
+.container {
+  padding: 0 $nav-margin-horizontal;
+  font-size: 1rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
