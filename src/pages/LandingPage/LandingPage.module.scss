@@ -1,15 +1,25 @@
 @import "styles/partials/_colors.scss";
+@import "styles/partials/_margins.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .headingContainer {
-  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 60vw;
-  top: 30vh;
-  z-index: 1;
+  width: 60%;
+  top: 25vh;
+}
+
+.spacing {
+  height: 35vh;
 }
 
 .backgroundContainer {
@@ -19,8 +29,10 @@
   justify-content: space-between;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: -1;
   width: 100%;
+  height: 100vh;
+  background-color: $color-background-blue;
 }
 
 .headingText {
@@ -29,27 +41,51 @@
 
 .bgImg {
   position: absolute;
+
   &__star{
     @extend .bgImg;
-    top: 30vh;
+    top: 10vh;
     right: 0;
   }
 
   &__squiggly{
     @extend .bgImg;
-    top: 40vh;
+    top: 50vh;
   }
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: $color-background-blue;
+.headerImg {
+  max-height: 500px;
 }
 
-.buffer {
-  height: 12rem;
+.infoBlock {
+  padding: 4rem $nav-margin-horizontal;
+
+  &__subtitle {
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+  
+  &__title {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+
+  &__withBackground {
+    @extend .infoBlock;
+    background-color: $color-background-blue;
+  }
+}
+
+.carousel {
+  &:hover {
+    cursor: grab;
+  }
+}
+
+.seeMore {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  text-align: right;
 }

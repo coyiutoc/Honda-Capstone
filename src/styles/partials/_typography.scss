@@ -6,12 +6,23 @@
 @font-face {
   font-family: Telegraf;
   font-weight: bold;
-  src: url("../../assets/fonts/Telegraf\ UltraBold\ 800.otf") format("opentype");
+  src: url("../../assets/fonts/Telegraf-SemiBold.otf") format("opentype");
 }
 
 @font-face {
   font-family: Telegraf;
-  font-weight: lighter;
+  font-weight: 200;
   src: url("../../assets/fonts/Telegraf\ UltraLight\ 200.otf") format("opentype");
 }
 
+// @font-face {
+//   font-family: Telegraf;
+//   font-weight: 
+//   src: url("../../assets/fonts/Telegraf-Medium.otf") format("opentype");
+// }
+
+// @font-face {
+//   font-family: Telegraf;
+//   font-weight: bold;
+//   src: url("../../assets/fonts/Telegraf-SemiBold.otf") format("opentype");
+// }

@@ -1,4 +1,5 @@
 @import "styles/partials/_margins.scss";
+@import "styles/partials/_colors.scss";
 
 .container {
   padding: 0 $nav-margin-horizontal;
@@ -6,4 +7,5 @@
   height: 5rem;
   display: flex;
   align-items: center;
+  background-color: $color-background-blue;
 }
