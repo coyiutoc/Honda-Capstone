@@ -3,11 +3,11 @@ import { ReactSVG } from 'react-svg'
 import { Link } from "react-router-dom";
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
-
+import MediaQuery from 'react-responsive';
+import routes from "routes.js";
 import HexagonComponent from "components/HexagonComponent/HexagonComponent.js";
 import CardComponent from "components/CardComponent/CardComponent.js";
 
-import routes from "routes.js";
 import styles from 'pages/LandingPage/LandingPage.module.scss';
 import headerImg from 'assets/images/headingDoodle.svg';
 import squiggly from 'assets/images/squiggly.svg';

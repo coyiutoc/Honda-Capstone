@@ -14,11 +14,11 @@
 }
 
 a {
-  text-decoration: none;
-  color: black;
+  text-decoration: none !important;
+  color: black !important;
   transition: color 0.2s ease;
     &:hover{
-      color: $color-blue;
+      color: $color-blue !important;
     }
 }
 

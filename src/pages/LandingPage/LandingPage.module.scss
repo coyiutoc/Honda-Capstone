@@ -8,6 +8,10 @@
   align-items: center;
 }
 
+.spacing {
+  height: 30vh;
+}
+
 .headingContainer {
   display: flex;
   flex-direction: column;
@@ -15,11 +19,6 @@
   align-items: center;
   text-align: center;
   width: 60%;
-  top: 25vh;
-}
-
-.spacing {
-  height: 35vh;
 }
 
 .backgroundContainer {
@@ -40,6 +39,11 @@
 }
 
 .bgImg {
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+
   position: absolute;
 
   &__star{
