@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 
 import LandingPage from "pages/LandingPage/LandingPage.js";
+import ProcessPage from "pages/ProcessPage/ProcessPage.js";
 import TeamPage from "pages/TeamPage/TeamPage.js";
 import Navigation from "components/Navigation/Navigation.js";
 import Footer from "components/Footer/Footer.js";
@@ -21,7 +22,7 @@ function App() {
             <LandingPage />     
           </Route>
           <Route exact path={routes.process}>
-            <div className="container">PROCESS PAGE</div>
+            <ProcessPage />
           </Route>
           <Route exact path={routes.team}>
             <TeamPage />

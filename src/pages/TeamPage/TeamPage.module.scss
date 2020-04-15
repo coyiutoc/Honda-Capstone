@@ -20,7 +20,7 @@
 }
 
 .headerContainer {
-  padding: 8rem 0 4rem 8rem;
+  padding: $heading-margin-horizontal 0 4rem 8rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -88,7 +88,7 @@
   &__name {
     font-size: 2rem;
     margin-bottom: 0.5rem;
-    
+
     @media screen and (max-width: 1024px) {
       margin-top: 2rem;
     }
