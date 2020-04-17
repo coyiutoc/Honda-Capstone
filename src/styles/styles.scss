@@ -22,7 +22,7 @@ html {
   scroll-behavior: smooth;
 }
 
-h1, h2 {
+h1, h2, h3 {
   margin: 0;
 }
 
@@ -32,6 +32,11 @@ h1 {
 
 h2 {
   font-size: 4rem;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 2.5rem;
   font-weight: normal;
 }
 

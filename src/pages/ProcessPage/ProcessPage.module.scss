@@ -1,5 +1,6 @@
 @import "styles/partials/_colors.scss";
 @import "styles/partials/_margins.scss";
+@import "styles/partials/_deviceSizes.scss";
 
 .header {
   width: 100%;
@@ -9,6 +10,14 @@
   flex-direction: column;
   padding-top: 30vh;
   padding-left: $heading-margin-horizontal;
+
+  @media screen and (max-width: $phone) {
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 25vh;
+  }
 }
 
 .bgImg {
@@ -16,27 +25,64 @@
     position: absolute;
     right: $heading-margin-horizontal;
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: $desktop) {
       display: none;
     }
   }
 }
 
 .content {
-  margin: 0 $heading-margin-horizontal;
+  margin: 4rem $heading-margin-horizontal 8rem $heading-margin-horizontal;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
 
-  &__body {
+    @media screen and (max-width: $phone) {
+      display: flex;
+      flex-direction: column;
+      margin: 4rem;
+    }
 
+  &__section {
+    padding-top: 4rem;
+    margin-bottom: 4rem;
   }
 
-  &__navigation > div{
-    position: sticky;
-    top: 10rem;
+  &__title {
+    margin-bottom: 1.5rem;
+  }
 
-    > a {
-      display: block;
+  &__subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__navigation {
+    margin-top: 4rem;
+
+    @media screen and (max-width: $phone) {
+      display: none;
+    }
+
+    > div {
+      position: sticky;
+      top: 10rem;
+  
+      > a {
+        display: block;
+
+        &:hover {
+          color: $color-blue !important;
+          cursor: pointer;
+        }
+      }
     }
   }
+}
+
+.notCurrent {
+  color: #828282 !important;
+}
+
+.current {
+  color: black !important;
 }

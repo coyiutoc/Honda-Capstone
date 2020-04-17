@@ -1,5 +1,6 @@
 @import "styles/partials/_colors.scss";
 @import "styles/partials/_margins.scss";
+@import "styles/partials/_deviceSizes.scss";
 
 .container {
   display: flex;
@@ -40,7 +41,7 @@
 
 .bgImg {
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: $desktop) {
     display: none;
   }
 
