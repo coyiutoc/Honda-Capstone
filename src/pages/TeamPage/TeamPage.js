@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { useEffect } from "react";
 import { ReactSVG } from 'react-svg'
 import styles from 'pages/TeamPage/TeamPage.module.scss';
 import teamPhoto from 'assets/images/team_photo.png';
@@ -12,6 +12,11 @@ function listRowStyle(index) {
 }
 
 const TeamPage = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div>
       <div className={styles.background}/>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ReactSVG } from 'react-svg'
 import { Link } from "react-router-dom";
 import { Desktop, Tablet, Mobile, Default, NotMobile } from "components/MediaQueries.js";
@@ -19,6 +19,10 @@ import LandingSVG from 'pages/LandingPage/LandingImg.js';
 import ProcessSVG from 'components/DoubleDiamond/DoubleDiamond.js';
 
 const LandingPage = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   function renderCardComponents() {
     return mediumData.map((elem, index) => {

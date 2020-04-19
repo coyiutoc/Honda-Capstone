@@ -11,13 +11,11 @@ import TeamPage from "pages/TeamPage/TeamPage.js";
 import Navigation from "components/Navigation/Navigation.js";
 import Footer from "components/Footer/Footer.js";
 import routes from "routes.js";
-import ScrollToTop from "components/ScrollToTop/ScrollToTop.js";
 
 function App() {
   return (
     <Router>
       <div>
-      <ScrollToTop>
         <Navigation />
         <Switch>
           <Route exact path={routes.home}>
@@ -31,7 +29,6 @@ function App() {
           </Route>
         </Switch>
         <Footer />
-      </ScrollToTop>
       </div>
     </Router>
   );

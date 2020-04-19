@@ -5,7 +5,6 @@ import styles from 'pages/ProcessPage/ProcessPage.module.scss';
 import star from 'assets/images/star.svg';
 import data from 'data/process.js';
 import routes from "routes.js";
-import MediaQuery from 'react-responsive';
 
 // Any custom components for sections here:
 import HexagonComponent from "components/HexagonComponent/HexagonComponent.js";
@@ -13,6 +12,7 @@ import HexagonComponent from "components/HexagonComponent/HexagonComponent.js";
 const ProcessPage = () => {
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     window.addEventListener("scroll", handleNavigationHighlight);
 
     return () => {
