@@ -5,8 +5,10 @@ import styles from 'pages/ProcessPage/ProcessPage.module.scss';
 import star from 'assets/images/star.svg';
 import data from 'data/process.js';
 import routes from "routes.js";
-
 import MediaQuery from 'react-responsive';
+
+// Any custom components for sections here:
+import HexagonComponent from "components/HexagonComponent/HexagonComponent.js";
 
 const ProcessPage = () => {
 
@@ -17,6 +19,14 @@ const ProcessPage = () => {
       window.removeEventListener("scroll", handleNavigationHighlight);
     }
   });
+
+  function renderAdditionalComponents(data) {
+    if (!data.customComponentKey) {return; }
+    // switch(data.customComponentKey) {
+    //   case "HEXAGON":
+    //       return <HexagonComponent />;
+    // }  
+  }
 
   function handleNavigationHighlight() {
     let fromTop = window.scrollY;
@@ -58,9 +68,10 @@ const ProcessPage = () => {
         <div className={styles.content__body}>
           {data.map((elem, index) => {
             return  <div key={index} id={elem.sectionTitle} className={styles.content__section}>
-                      <div className={styles.content__title}><h3>{elem.sectionTitle + " -"}</h3></div>
-                      <div className={styles.content__subtitle}>{elem.subtitle}</div>
+                      <div className={styles.content__title}>{elem.sectionTitle + " -"}</div>
+                      <div className={styles.content__subtitle}><h3>{elem.subtitle}</h3></div>
                       <div className={styles.content__text}>{elem.text}</div>
+                      {renderAdditionalComponents(elem)}
                     </div>
           })}
         </div>

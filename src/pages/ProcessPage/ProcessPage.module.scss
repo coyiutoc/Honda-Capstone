@@ -8,7 +8,7 @@
   background-color: $color-background-blue;
   display: flex;
   flex-direction: column;
-  padding-top: 30vh;
+  padding-top: 20vh;
   padding-left: $heading-margin-horizontal;
 
   @media screen and (max-width: $phone) {
@@ -36,11 +36,11 @@
   display: grid;
   grid-template-columns: 1fr 3fr;
 
-    @media screen and (max-width: $phone) {
-      display: flex;
-      flex-direction: column;
-      margin: 4rem;
-    }
+  @media screen and (max-width: $phone) {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem;
+  }
 
   &__section {
     padding-top: 4rem;
@@ -48,11 +48,12 @@
   }
 
   &__title {
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
+    color: $color-grey;
   }
 
   &__subtitle {
-    font-size: 1.5rem;
     margin-bottom: 1.5rem;
   }
 

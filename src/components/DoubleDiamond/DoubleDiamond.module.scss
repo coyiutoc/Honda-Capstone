@@ -1,0 +1,21 @@
+@import "styles/partials/_colors.scss";
+
+.tooltip {
+  padding: 2rem !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: white !important;
+  opacity: 1;
+}
+
+.processTriangle {
+  &:hover {
+    fill:#E5F2F9;
+    stroke: $color-blue;
+    cursor: pointer;
+    opacity: 1;
+  }
+}
+
+.noHover {
+  pointer-events: none;
+}

@@ -38,6 +38,7 @@ const TeamPage = () => {
                         <div className={styles.content__position}> {data[name].position} </div>
                         <div className={styles.content__bio}> {data[name].bio} </div>
                       </div>
+                      {data.customComponent ? <data.customComponent /> : ""}
                     </div>
           })}
         </div>

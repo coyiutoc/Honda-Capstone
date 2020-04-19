@@ -1,3 +1,22 @@
+@import "styles/partials/_deviceSizes.scss";
+
+@media screen and (min-width: $desktop) {
+  .hexagonRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: $desktop) {
+  .hexagonRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .name {
   &__title {
     font-size: 1.2rem;
@@ -8,27 +27,25 @@
     font-size: 0.8rem;
   }
 
-  &__matt, &__haley, &__caitlin {
-    position: relative;
-    left: 50px;
-    padding-bottom: 2rem;
-    @media screen and (max-width: 992px) {
-      left: 30px;
+  @media screen and (min-width: $desktop) {
+    &__matt, &__haley, &__caitlin {
+      position: relative;
+      text-align: center;
+      padding-bottom: 2rem;
     }
-    @media screen and (max-width: 768px) {
-      left: 20px;
+
+    &__margot, &__michael {
+      position: relative;
+      padding-top: 2rem;
+      text-align: center;
     }
   }
 
-  &__margot, &__michael {
-    position: relative;
-    padding-top: 2rem;
-    left: 50px;
-    @media screen and (max-width: 992px) {
-      left: 25px;
-    }
-    @media screen and (max-width: 768px) {
-      left: 20px;
+  @media screen and (max-width: $desktop) {
+    &__matt, &__haley, &__caitlin, &__margot, &__michael {
+      position: relative;
+      text-align: center;
+      padding-bottom: 2rem;
     }
   }
 }
@@ -37,33 +54,15 @@
   margin-top: 2rem;
 }
 
-.hexagonRow {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 .hexagon {
   clip-path: polygon(100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0, 75% 0);
   height: 200px;
   width: 200px;
-
-  @media screen and (max-width: 992px) {
-    height: 150px;
-    width: 150px;
-  }
-  @media screen and (max-width: 768px) {
-    height: 100px;
-    width: 100px;
-  }
-
+  margin: 0 1rem;
+  
   &--pushDown {
-    margin-top: 200px;
-    @media screen and (max-width: 992px) {
-      margin-top: 175px;
-    }
-    @media screen and (max-width: 768px) {
-      margin-top: 150px;
+    @media screen and (min-width: $desktop) {
+      margin-top: 200px;
     }
   }
 
@@ -88,16 +87,16 @@
     background-size: cover;
   }
 
-  &__caitlin {
-    @extend .hexagon;
-    background: url("../../assets/images/team/caitlin.png") no-repeat;
-    background-size: cover;
-  }
-
   &__michael {
     @extend .hexagon;
     @extend .hexagon--pushDown;
     background: url("../../assets/images/team/michael.png") no-repeat;
     background-size: cover;
   }
-}
+
+  &__caitlin {
+    @extend .hexagon;
+    background: url("../../assets/images/team/caitlin.png") no-repeat;
+    background-size: cover;
+  }
+}  

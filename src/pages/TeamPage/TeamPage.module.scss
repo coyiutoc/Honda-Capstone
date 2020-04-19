@@ -21,7 +21,7 @@
 }
 
 .headerContainer {
-  padding: $heading-margin-horizontal 0 4rem 8rem;
+  padding: 4rem 0 $heading-margin-horizontal 8rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -84,7 +84,7 @@
   }
 
   &__img  {
-    height: 400px;
+    height: 300px;
     @media screen and (max-width: $desktop) { height: 300px }
     @media screen and (max-width: $tablet) { height: 200px }
 
