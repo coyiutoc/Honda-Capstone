@@ -77,6 +77,10 @@
   max-height: 500px;
 }
 
+.headingImgSm {
+  padding: 0 1rem;
+}
+
 .processImg {
   display: flex;
   justify-content: center;
@@ -86,6 +90,10 @@
 
 .infoBlock {
   padding: 4rem $nav-margin-horizontal;
+
+  @media screen and (max-width: $phone) {
+   padding: 4rem $nav-margin-horizontal-sm;
+  }
 
   &__subtitle {
     margin-bottom: 2rem;

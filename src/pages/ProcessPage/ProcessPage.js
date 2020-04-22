@@ -7,7 +7,7 @@ import data from 'data/process.js';
 import routes from "routes.js";
 
 // Any custom components for sections here:
-import HexagonComponent from "components/HexagonComponent/HexagonComponent.js";
+import ResearchGoalCards from "components/ResearchGoalCards/ResearchGoalCards.js";
 
 const ProcessPage = () => {
 
@@ -22,10 +22,10 @@ const ProcessPage = () => {
 
   function renderAdditionalComponents(data) {
     if (!data.customComponentKey) {return; }
-    // switch(data.customComponentKey) {
-    //   case "HEXAGON":
-    //       return <HexagonComponent />;
-    // }  
+    switch(data.customComponentKey) {
+      case "RESEARCH_GOAL_CARDS":
+          return <ResearchGoalCards />;
+    }  
   }
 
   function handleNavigationHighlight() {
@@ -67,14 +67,24 @@ const ProcessPage = () => {
         </div>
         <div className={styles.content__body}>
           {data.map((elem, index) => {
-            return  <div key={index} id={elem.sectionTitle} className={styles.content__section}>
-                      <div className={styles.content__title}>{elem.sectionTitle + " -"}</div>
-                      <div className={styles.content__subtitle}><h3>{elem.subtitle}</h3></div>
-                      <div className={styles.content__text}>{elem.text}</div>
-                      {renderAdditionalComponents(elem)}
+            return  <div key={index} id={elem.sectionTitle} className={styles.section}>
+                      <div className={styles.section__title}>{elem.sectionTitle + " -"}</div>
+
+                      {elem.subsections.map((subsection, index) => {
+                        return  <div className={styles.subsection} key={index}>
+                                  <div className={styles.subsection__subtitle}><h3>{subsection.subsectionTitle}</h3></div>
+                                  {subsection.text && <div className={styles.subsection__text}>{subsection.text}</div>}
+                                  {subsection.boxedText && <div className={styles.subsection__boxed}>{subsection.boxedText}</div>}
+                                  {subsection.customComponentKey && renderAdditionalComponents(subsection)}
+                                </div>
+                      })}
+
                     </div>
           })}
         </div>
+      </div>
+      <div className={styles.conclusion}>
+          kjsdhgksdh
       </div>
     </div>
   );

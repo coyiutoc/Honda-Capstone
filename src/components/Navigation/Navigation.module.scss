@@ -1,5 +1,6 @@
 @import "styles/partials/_margins.scss";
 @import "styles/partials/_colors.scss";
+@import "styles/partials/_deviceSizes.scss";
 
 .container {
   height: 5rem;
@@ -9,6 +10,10 @@
   align-items: center;
   z-index: 10;
   background-color: $color-background-blue;
+
+  @media screen and (max-width: $phone) {
+    padding: 0.5rem $nav-margin-horizontal-sm;
+  }
 }
 
 a {

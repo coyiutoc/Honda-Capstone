@@ -17,6 +17,7 @@ import squiggly from 'assets/images/squiggly.svg';
 import star from 'assets/images/star.svg';
 import LandingSVG from 'pages/LandingPage/LandingImg.js';
 import ProcessSVG from 'components/DoubleDiamond/DoubleDiamond.js';
+import HeadingImgSmallSVG from 'assets/images/headingImgSmall.svg';
 
 const LandingPage = () => {
 
@@ -65,7 +66,7 @@ const LandingPage = () => {
             <ProcessSVG width="700" />
           </Tablet>
           <Mobile>
-            <ProcessSVG width="300" />
+            <ReactSVG className={styles.headingImgSm} src={HeadingImgSmallSVG} />
           </Mobile>
         </div>
         <div className={styles.seeMore}>

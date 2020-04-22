@@ -14,8 +14,8 @@
   @media screen and (max-width: $phone) {
     justify-content: flex-start;
     text-align: left;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: $nav-margin-horizontal-sm;
+    padding-right: $nav-margin-horizontal-sm;
     padding-top: 25vh;
   }
 }
@@ -31,6 +31,42 @@
   }
 }
 
+.subsection {
+  margin: 2rem 0 4rem 0;
+
+  > div {
+    margin-bottom: 1.5rem;
+  }
+
+  > div:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &__boxed {
+    font-size: 1.2rem;
+    padding: 2rem;
+    border: 2px solid black; 
+  }
+}
+
+.subsection:last-of-type {
+  margin-bottom: 0;
+}
+
+.section {
+  padding-top: 4rem;
+  margin-bottom: 4rem;
+
+  &__title {
+    font-size: 1.5rem;
+    color: $color-grey;
+  }
+}
+
+.section:last-of-type {
+  margin-bottom: 0;  
+}
+
 .content {
   margin: 4rem $heading-margin-horizontal 8rem $heading-margin-horizontal;
   display: grid;
@@ -39,22 +75,7 @@
   @media screen and (max-width: $phone) {
     display: flex;
     flex-direction: column;
-    margin: 4rem;
-  }
-
-  &__section {
-    padding-top: 4rem;
-    margin-bottom: 4rem;
-  }
-
-  &__title {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    color: $color-grey;
-  }
-
-  &__subtitle {
-    margin-bottom: 1.5rem;
+    margin: 4rem $nav-margin-horizontal-sm;
   }
 
   &__navigation {
@@ -78,6 +99,11 @@
       }
     }
   }
+}
+
+.conclusion {
+  background-color: $color-background-blue;
+  padding: 8rem $heading-margin-horizontal;
 }
 
 .notCurrent {

@@ -1,0 +1,51 @@
+@import "styles/partials/_colors.scss";
+@import "styles/partials/_margins.scss";
+@import "styles/partials/_deviceSizes.scss";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media screen and (max-width: $tablet) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    >div {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.card {
+  padding: 1.5rem; 
+  width: 30%;
+  border-radius: 10px;
+  font-weight: bold;
+  // position: relative;
+  // top: 0;
+  // transition: top ease 0.2s;
+
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+  }
+
+  &__img {
+    margin-bottom: 1rem;
+  }
+
+  // &:hover {
+  //   top: -5px;
+  // }
+}
+
+.boxShadow {
+  box-shadow: 0 0 20px 5px rgba(204, 210, 234, 0.4);
+  transition: box-shadow 500ms;
+}
+
+.boxShadow:hover {
+  box-shadow: 0 0 20px 10px rgba(204, 210, 234, 0.8);
+}
