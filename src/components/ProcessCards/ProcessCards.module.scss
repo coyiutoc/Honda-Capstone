@@ -1,6 +1,7 @@
 @import "styles/partials/_colors.scss";
 @import "styles/partials/_margins.scss";
 @import "styles/partials/_deviceSizes.scss";
+@import "styles/partials/_boxShadow.scss";
 
 .container {
   display: flex;
@@ -24,28 +25,23 @@
   width: 30%;
   border-radius: 10px;
   font-weight: bold;
-  // position: relative;
-  // top: 0;
-  // transition: top ease 0.2s;
 
   @media screen and (max-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     width: 100%;
+    >div {
+      margin-right: 1rem;
+    }
   }
 
   &__img {
     margin-bottom: 1rem;
   }
 
-  // &:hover {
-  //   top: -5px;
-  // }
-}
-
-.boxShadow {
-  box-shadow: 0 0 20px 5px rgba(204, 210, 234, 0.4);
-  transition: box-shadow 500ms;
-}
-
-.boxShadow:hover {
-  box-shadow: 0 0 20px 10px rgba(204, 210, 234, 0.8);
+  &__body p {
+    font-size: 1.0rem;
+    font-weight: normal;
+  }
 }

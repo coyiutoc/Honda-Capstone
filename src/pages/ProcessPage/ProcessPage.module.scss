@@ -61,6 +61,11 @@
     font-size: 1.5rem;
     color: $color-grey;
   }
+
+  &__noTopPadding {
+    @extend .section;
+    padding-top: 0;
+  }
 }
 
 .section:last-of-type {
@@ -104,6 +109,12 @@
 .conclusion {
   background-color: $color-background-blue;
   padding: 8rem $heading-margin-horizontal;
+
+  @media screen and (max-width: $phone) {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem $nav-margin-horizontal-sm;
+  }
 }
 
 .notCurrent {

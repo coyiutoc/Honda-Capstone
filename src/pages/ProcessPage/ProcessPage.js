@@ -3,11 +3,13 @@ import { ReactSVG } from 'react-svg';
 import { HashLink } from 'react-router-hash-link';
 import styles from 'pages/ProcessPage/ProcessPage.module.scss';
 import star from 'assets/images/star.svg';
-import data from 'data/process.js';
+import {data, researchdata, keyTakeawaysData} from 'data/process.js';
 import routes from "routes.js";
 
 // Any custom components for sections here:
-import ResearchGoalCards from "components/ResearchGoalCards/ResearchGoalCards.js";
+import ProcessCards from "components/ProcessCards/ProcessCards.js";
+import Affinity from "components/Affinity/Affinity.js";
+import JourneyMap from "components/JourneyMap/JourneyMap.js";
 
 const ProcessPage = () => {
 
@@ -24,7 +26,11 @@ const ProcessPage = () => {
     if (!data.customComponentKey) {return; }
     switch(data.customComponentKey) {
       case "RESEARCH_GOAL_CARDS":
-          return <ResearchGoalCards />;
+          return <ProcessCards data={researchdata} />;
+      case "AFFINITY":
+          return <Affinity />;
+      case "JOURNEYMAP":
+          return <JourneyMap />;;
     }  
   }
 
@@ -83,8 +89,24 @@ const ProcessPage = () => {
           })}
         </div>
       </div>
+
       <div className={styles.conclusion}>
-          kjsdhgksdh
+        <div className={styles.section__noTopPadding}>
+            <div className={styles.section__title}>{"Key Takeaways -"}</div>
+            <div className={styles.subsection}>
+              <div className={styles.subsection__subtitle}><h3>Sharing artifacts can help create alignment in...</h3></div>
+              <ProcessCards data={keyTakeawaysData} />
+            </div>
+        </div>
+        <div className={styles.section__noTopPadding}>
+            <div className={styles.section__title}>{"Final Direction -"}</div>
+            <div className={styles.subsection}>
+              <div className={styles.subsection__subtitle}><h3>Enabling better collaboration and communication of design artifacts and insights</h3></div>
+              <div className={styles.subsection__text}>
+                Another significant theme that arose in our findings is the difficulty in sharing artifacts and transferring research and information. These transactions, both within and between teams, prove particularly challenging, especially when people are not in the same location. There are many angles to approach this opportunity as well, from team collaboration workflows to analysis and persuasive visualization tools.  
+              </div>
+            </div>
+        </div>
       </div>
     </div>
   );

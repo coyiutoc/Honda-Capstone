@@ -1,0 +1,8 @@
+.boxShadow {
+  box-shadow: 0 0 20px 5px rgba(204, 210, 234, 0.4);
+  transition: box-shadow 500ms;
+}
+
+.boxShadow:hover {
+  box-shadow: 0 0 20px 10px rgba(204, 210, 234, 0.8);
+}
