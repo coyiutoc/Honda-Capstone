@@ -4,17 +4,19 @@ import { HashLink } from 'react-router-hash-link';
 import styles from 'pages/ProcessPage/ProcessPage.module.scss';
 import star from 'assets/images/star.svg';
 import { data, researchdata, keyTakeawaysData } from 'data/process.js';
+
 import routes from "routes.js";
 
 // Any custom components for sections here:
 import ProcessCards from "components/ProcessCards/ProcessCards.js";
 import Affinity from "components/Affinity/Affinity.js";
 import JourneyMap from "components/JourneyMap/JourneyMap.js";
+import Personas from "components/Personas/Personas.js";
 
 const ProcessPage = () => {
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
     window.addEventListener("scroll", handleNavigationHighlight);
 
     return () => {
@@ -32,7 +34,7 @@ const ProcessPage = () => {
       case "JOURNEYMAP":
           return <JourneyMap />;
       case "PERSONAS":
-          return <ProcessCards data={personasData}/>;
+          return <Personas />;
     }  
   }
 

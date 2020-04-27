@@ -8,6 +8,12 @@ import r1 from 'assets/images/research1.svg';
 import r2 from 'assets/images/research2.svg';
 import r3 from 'assets/images/research3.svg';
 
+import student from 'assets/images/personas/student.png';
+import engineer from 'assets/images/personas/engineer.png';
+import thinkTank from 'assets/images/personas/thinkTank.png';
+import DTinstructor from 'assets/images/personas/DTinstructor.png';
+import DTstrategist from 'assets/images/personas/DTstrategist.png';
+
 export const data = [
   {
     sectionTitle: "Problem Brief",
@@ -80,10 +86,34 @@ export const keyTakeawaysData = [
 ]
 
 export const personasData = [
-  {text: "Persona1",
-   imgCircle: "",
+  {
+   text: "OnRamp Student",
+   subtitle: "OSU Business Administration Major, OnRamp Participant",
+   img: student,
+   url: "https://www.figma.com/proto/EoFcPwLlzWjIdIBVQhoyUw/Personas?node-id=460%3A772&scaling=scale-down"
   },
-  {text: "Persona2",
-   imgCircle: "",
+  {
+   text: "Engineer",
+   subtitle: "American Automotive Co, Materials Engineer",
+   img: engineer,
+   url: "https://www.figma.com/proto/EoFcPwLlzWjIdIBVQhoyUw/Personas?node-id=460%3A852&scaling=scale-down"
+  },
+  {
+   text: "Think Tank Faciltator",
+   subtitle: "Experience Design Manager, Think Tank Facilitator",
+   img: thinkTank,
+   url: "https://www.figma.com/proto/EoFcPwLlzWjIdIBVQhoyUw/Personas?node-id=460%3A453&scaling=scale-down"
+  },
+  {
+   text: "Design Thinking Instructor",
+   subtitle: "Design Thinking Instructor, Practitioner Training",
+   img: DTinstructor,
+   url: "https://www.figma.com/proto/EoFcPwLlzWjIdIBVQhoyUw/Personas?node-id=460%3A156&scaling=scale-down"
+  },
+  {
+   text: "Design Thinking Strategist",
+   subtitle: "Design Thinking Strategist, Fundamentals Instructor",
+   img: DTstrategist,
+   url: "https://www.figma.com/proto/EoFcPwLlzWjIdIBVQhoyUw/Personas?node-id=460%3A153&scaling=scale-down"
   },
 ]

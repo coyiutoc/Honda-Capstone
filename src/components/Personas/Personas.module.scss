@@ -1,0 +1,89 @@
+@import "styles/partials/_colors.scss";
+@import "styles/partials/_margins.scss";
+@import "styles/partials/_deviceSizes.scss";
+@import "styles/partials/_boxShadow.scss";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+  @media screen and (max-width: $tablet) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.card {
+  padding: 1.5rem; 
+  width: 45%;
+  border-radius: 10px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0.5rem 1rem 0.5rem 0rem;
+
+  @media screen and (max-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+    
+    >div {
+      margin-right: 1rem;
+    }
+  }
+
+  &__img {
+    margin-right: 1rem;
+    height: 100%;
+
+    > img {
+      height: 120px;
+      width: auto;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+
+  &__subtitle {
+    font-weight: normal;
+    font-size: 0.8rem;
+  }
+
+  &__body p {
+    font-size: 1.0rem;
+    font-weight: normal;
+  }
+
+  &__button {
+    margin-top: 1rem;
+    align-self: flex-end;
+    font-size: 0.8rem;
+    font-weight: normal;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid $color-blue;
+    color: $color-blue;
+    border-radius: 4px;
+    transition: background-color 400ms ease;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $color-blue;
+      color: white;
+    }
+  }
+}
