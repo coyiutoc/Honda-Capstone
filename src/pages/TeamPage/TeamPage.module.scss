@@ -64,7 +64,7 @@
   &__row {
     display: flex;
     flex-direction: row;
-    margin-bottom: 4rem;
+    margin-bottom: 8rem;
 
     @media screen and (max-width: $phone) {
       text-align: center;
@@ -84,7 +84,7 @@
   }
 
   &__img  {
-    height: 300px;
+    height: 400px;
     @media screen and (max-width: $desktop) { height: 300px }
     @media screen and (max-width: $tablet) { height: 200px }
 
@@ -96,7 +96,7 @@
 }
 
 .content {
-  margin-left: 3rem;
+  margin-left: 4rem;
   @media screen and (max-width: $phone) { margin-left: 0; }
 
   &__name {

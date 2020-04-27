@@ -9,7 +9,7 @@ const data = {
   matt: {
     name: "Matt Franklin",
     position: "Project Manager",
-    bio: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    bio: "Matt’s career has combined expertise in engineering and system design with management and sales experience. For the past 15 years Matt has worked with clients to use technology to create new workflows for communication, collaboration, and mission critical tasks. He specializes in combining disparate technologies into novel tools that extend human capabilities. When he’s not at work, he enjoys making music, designing and building furniture for his apartment, and running.",
     imgURL: mattImg,
   },
   margot: {
@@ -21,7 +21,7 @@ const data = {
   haley: {
     name: "Haley Park",
     position: "Design Lead",
-    bio: "Haley is a product designer passionate about design systems, UI animation, and mixed reality. She has worked at startups in Korea as a product designer. She also dabbles in web development, illustration, and brand design. She’s always down for karaoke and horror movies. To see some of her previous work, visit https://haleypark.design/",
+    bio: "Haley is a product designer who creates experiences that spark joy. She is passionate about design systems, UI animation, and mixed reality. She has previously worked at startups in Korea as a product designer. She also dabbles in web development, illustration, and brand design. She’s always down for karaoke and horror movies. To see some of her previous work, visit https://haleypark.design/",
     imgURL: haleyImg,
   },
   michael: {

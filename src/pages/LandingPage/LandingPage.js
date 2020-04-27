@@ -27,7 +27,7 @@ const LandingPage = () => {
 
   function renderCardComponents() {
     return mediumData.map((elem, index) => {
-      return <CardComponent key={index} title={elem.title} url={elem.url} img={elem.img}/>
+      return <CardComponent key={index} title={elem.title} url={elem.url} img={elem.img} />
     });
   }
 
@@ -36,21 +36,21 @@ const LandingPage = () => {
       {/* ======== HEADER CONTENT ======== */}
       <div className={styles.container}>
         <div className={styles.backgroundContainer}>
-            <ReactSVG className={styles.bgImg__squiggly} src={squiggly} />
-            <ReactSVG className={styles.bgImg__star} src={star} />
+          <ReactSVG className={styles.bgImg__squiggly} src={squiggly} />
+          <ReactSVG className={styles.bgImg__star} src={star} />
         </div>
-        <div className={styles.spacing}/>
+        <div className={styles.spacing} />
         <div className={styles.headingContainer}>
-          <h2>An intelligent platform to learn design thinking.</h2>
+          <h2>Building collaboration solutions for multi-team workflows.</h2>
           <p className={styles.headingText}>CMU MHCI Capstone project with Honda R&D Americas</p>
           <Desktop>
-            <LandingSVG width="596"/>
+            <LandingSVG width="596" />
           </Desktop>
           <Tablet>
-            <LandingSVG width="450"/>
+            <LandingSVG width="450" />
           </Tablet>
           <Mobile>
-            <LandingSVG width="300"/>
+            <LandingSVG width="300" />
           </Mobile>
         </div>
       </div>
@@ -83,7 +83,7 @@ const LandingPage = () => {
         <div className={styles.infoBlock__subtitle}>Meet the team -</div>
         <div className={styles.infoBlock__title}>MHCI Honda Pitt Crew</div>
 
-        <HexagonComponent /> 
+        <HexagonComponent />
         <div className={styles.seeMore}>
           <Link
             to={`${routes.team}`}
@@ -104,7 +104,7 @@ const LandingPage = () => {
               infinite
               keepDirectionWhenDragging
             >
-            {renderCardComponents()}
+              {renderCardComponents()}
             </Carousel>
           </div>
         </Desktop>
@@ -115,7 +115,7 @@ const LandingPage = () => {
               infinite
               keepDirectionWhenDragging
             >
-            {renderCardComponents()}
+              {renderCardComponents()}
             </Carousel>
           </div>
         </Default>

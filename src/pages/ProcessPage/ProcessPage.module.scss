@@ -11,6 +11,10 @@
   padding-top: 20vh;
   padding-left: $heading-margin-horizontal;
 
+  p {
+    max-width: 920px;
+  }
+
   @media screen and (max-width: $phone) {
     justify-content: flex-start;
     text-align: left;
