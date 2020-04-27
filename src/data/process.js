@@ -48,7 +48,7 @@ export const data = [
       },
       { 
         subsectionTitle: "Personas",
-        customComponentKey: null,
+        customComponentKey: "PERSONAS",
       },
       { 
         subsectionTitle: "Customer Journey Map",
@@ -77,4 +77,13 @@ export const keyTakeawaysData = [
   {text: "Identify pain points and opportunities within Design Thinking education",
    body: ["How do I show tangible results to the upper management to gain support and funding?"],
    img: k3},
+]
+
+export const personasData = [
+  {text: "Persona1",
+   imgCircle: "",
+  },
+  {text: "Persona2",
+   imgCircle: "",
+  },
 ]

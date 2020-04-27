@@ -30,8 +30,10 @@ const ProcessPage = () => {
       case "AFFINITY":
         return <Affinity />;
       case "JOURNEYMAP":
-        return <JourneyMap />;;
-    }
+          return <JourneyMap />;
+      case "PERSONAS":
+          return <ProcessCards data={personasData}/>;
+    }  
   }
 
   function handleNavigationHighlight() {
