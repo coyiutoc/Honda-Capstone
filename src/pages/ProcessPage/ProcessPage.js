@@ -3,7 +3,7 @@ import { ReactSVG } from 'react-svg';
 import { HashLink } from 'react-router-hash-link';
 import styles from 'pages/ProcessPage/ProcessPage.module.scss';
 import star from 'assets/images/star.svg';
-import { data, researchdata, keyTakeawaysData } from 'data/process.js';
+import { data, researchdata, keyTakeawaysData, insightsData } from 'data/process.js';
 
 import routes from "routes.js";
 
@@ -12,6 +12,7 @@ import ProcessCards from "components/ProcessCards/ProcessCards.js";
 import Affinity from "components/Affinity/Affinity.js";
 import JourneyMap from "components/JourneyMap/JourneyMap.js";
 import Personas from "components/Personas/Personas.js";
+import Insights from "components/Insights/Insights.js";
 
 const ProcessPage = () => {
 
@@ -35,6 +36,14 @@ const ProcessPage = () => {
           return <JourneyMap />;
       case "PERSONAS":
           return <Personas />;
+      case "INSIGHTS_DATA":
+          return <Insights data={insightsData.data}/>;
+      case "INSIGHTS_LANGUAGE":
+          return <Insights data={insightsData.language}/>;
+      case "INSIGHTS_BELIEVE":
+          return <Insights data={insightsData.believe}/>;
+      case "INSIGHTS_UNDERSTAND":
+          return <Insights data={insightsData.understand}/>;
     }  
   }
 

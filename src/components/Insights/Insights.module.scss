@@ -1,0 +1,57 @@
+@import "styles/partials/_colors.scss";
+@import "styles/partials/_margins.scss";
+@import "styles/partials/_deviceSizes.scss";
+@import "styles/partials/_boxShadow.scss";
+
+.insight {
+  margin-bottom: 2rem;
+  width: 100%;
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media screen and (max-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__text {
+    margin-right: 1rem;
+  }
+}
+
+.quote {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 1px solid $color-light-blue;
+  background-color: $color-super-light-blue;
+
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 0;
+    margin-top: 1rem;
+  }
+
+  :last-of-type {
+    margin-bottom: 0;
+  }
+
+  &__img {
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__author {
+    color: $color_blue;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+  }
+}
