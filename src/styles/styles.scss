@@ -38,6 +38,15 @@ h2 {
 h3 {
   font-size: 2.5rem;
   font-weight: normal;
+  margin-bottom: 4rem;
+}
+
+h4 {
+  font-size: 1.7rem;
+}
+
+h5 {
+  font-weight: 600;
 }
 
 p {
@@ -46,6 +55,27 @@ p {
   margin-bottom: 1rem;
 }
 
+span {
+  font-size: 1.2rem;
+}
+
 path{
   pointer-events:all;
+}
+
+ol {
+  margin: 0;
+  list-style: decimal-leading-zero;
+  padding-inline-start: 0;
+  counter-reset: listNumbering;
+  margin-left: 1.7rem;
+  
+  li {
+    counter-increment: listNumbering;
+
+    span {
+      font-size: 1.2rem;
+      line-height: 1.6em;
+    }
+  }
 }

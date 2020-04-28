@@ -18,16 +18,16 @@ export const data = [
   {
     sectionTitle: "Problem Brief",
     subsections: [
-      { 
+      {
         subsectionTitle: "What we started with",
         text: "Whether it is disruptive, revolutionary, evolutionary or incremental, the ability to innovate is essential for companies to sustain market position and grow. As innovation becomes a core competence, companies must also innovate faster, address new dimensions of innovation and apply it across market segments. Honda R&D is not exempt from this trend. It too must develop discipline for innovating and selecting innovations that are strategically significant throughout the company.",
         boxedText: "How can Honda implement technology to help drive design thinking methodologies in a rapidly changing automotive industry?",
         customComponentKey: null,
       },
-      { 
+      {
         subsectionTitle: "Where we're headed",
         text: "A significant theme that arose in our findings is the difficulty in sharing artifacts and transferring research and information. These transactions, both within and between teams, prove particularly challenging, especially when people are not in the same location. There are many angles to approach this opportunity as well, from team collaboration workflows to analysis and persuasive visualization tools.  Which led us to the question...",
-        boxedText: "How might we enabled better collaboration and communication of design artifacts and insights?",
+        boxedText: "How might we enable better collaboration and communication of design artifacts and insights?",
         customComponentKey: null,
       }
     ],
@@ -35,11 +35,11 @@ export const data = [
   {
     sectionTitle: "Research",
     subsections: [
-      { 
+      {
         subsectionTitle: "How did we get here?",
         text: "Our research focused on the interactions between design thinking facilitators and the employees and students seeking knowledge and consulting from them to identify painpoints that could better improve their research. Through our generative research phase, we reached out to design thinking industry leaders, internal Honda design thinking practitioners, and workshop participants to better understand these relationships.",
       },
-      { 
+      {
         subsectionTitle: "Research Goals",
         customComponentKey: "RESEARCH_GOAL_CARDS",
       }
@@ -48,15 +48,15 @@ export const data = [
   {
     sectionTitle: "Synthesis",
     subsections: [
-      { 
+      {
         subsectionTitle: "Affinity Diagramming",
         customComponentKey: "AFFINITY",
       },
-      { 
+      {
         subsectionTitle: "Personas",
         customComponentKey: "PERSONAS",
       },
-      { 
+      {
         subsectionTitle: "Customer Journey Map",
         customComponentKey: "JOURNEYMAP",
       }
@@ -65,19 +65,19 @@ export const data = [
   {
     sectionTitle: "Insights",
     subsections: [
-      { 
+      {
         subsectionTitle: "Data at Honda is Not Sustainable",
         customComponentKey: "INSIGHTS_DATA",
       },
-      { 
+      {
         subsectionTitle: "We Don't Speak the Same Language",
         customComponentKey: "INSIGHTS_LANGUAGE",
       },
-      { 
+      {
         subsectionTitle: "Why Should I Believe You?",
         customComponentKey: "INSIGHTS_BELIEVE",
       },
-      { 
+      {
         subsectionTitle: "Do I Believe What Research You've Done?",
         customComponentKey: "INSIGHTS_UNDERSTAND",
       }
@@ -86,56 +86,78 @@ export const data = [
 ]
 
 export const researchdata = [
-  {text: "Understand how value is communicated through our stakeholders",
-   img: r3},
-  {text: "Empathize with Design Thinking facilitators and 'implementors'",
-   img: r2},
-  {text: "Identify pain points and opportunities within Design Thinking education",
-   img: r1},
+  {
+    text: "Understand how value is communicated through our stakeholders",
+    img: r3
+  },
+  {
+    text: "Empathize with Design Thinking facilitators and 'implementors'",
+    img: r2
+  },
+  {
+    text: "Identify pain points and opportunities within Design Thinking education",
+    img: r1
+  },
 ]
 
 export const keyTakeawaysData = [
-  {text: "Understand how value is communicated through our stakeholders",
-   body: ["How do I find what others on my team (especially if remote) are working on?", "How do I structure my work so others can understand without me / digitally?", "Share information and materials quickly and easily?"],
-   img: k2},
-  {text: "Empathize with Design Thinking facilitators and 'implementors'",
-   body: ["I learned you worked on X too, how do I access and build off of that?", "How do I make sure I’m doing something that hasn’t been worked on before?"],
-   img: k1},
-  {text: "Identify pain points and opportunities within Design Thinking education",
-   body: ["How do I show tangible results to the upper management to gain support and funding?"],
-   img: k3},
+  {
+    text: "Data Sustainability",
+    body: ["How might we document and tag ongoing research so that data is searchable and usable by others?", "How might we Understand existing data without the researcher or team present to explain it?"],
+    img: k2
+  },
+  {
+    text: "Communicating Research Findings",
+    body: ["How might we design for multiple languages, cultures, or disciplines?",
+      "How might we enable more cross-team collaboration and bring multiple perspectives to prototyping processes?"],
+    img: k1
+  },
+  {
+    text: "Communicating Research Credibility",
+    body: ["How might we better evaluate and demonstrate the credibility of our research?",
+      "How might we better demonstrate alignment to business strategy in our projects?"
+    ],
+    img: k3
+  },
+  {
+    text: "Improve Project Hand-offs",
+    body: ["How might we make it easier to find past projects related to our own?",
+      "How might we enable more efficient project hand-offs that do not require lengthy in-person visits?"
+    ],
+    img: k3
+  },
 ]
 
 export const personasData = [
   {
-   text: "OnRamp Student",
-   subtitle: "OSU Business Administration Major, OnRamp Participant",
-   img: student,
-   url: "https://www.figma.com/proto/EoFcPwLlzWjIdIBVQhoyUw/Personas?node-id=460%3A772&scaling=scale-down"
+    text: "OnRamp Student",
+    subtitle: "OSU Business Administration Major, OnRamp Participant",
+    img: student,
+    url: "https://www.figma.com/proto/EoFcPwLlzWjIdIBVQhoyUw/Personas?node-id=460%3A772&scaling=scale-down"
   },
   {
-   text: "Engineer",
-   subtitle: "American Automotive Co, Materials Engineer",
-   img: engineer,
-   url: "https://www.figma.com/proto/EoFcPwLlzWjIdIBVQhoyUw/Personas?node-id=460%3A852&scaling=scale-down"
+    text: "Engineer",
+    subtitle: "American Automotive Co, Materials Engineer",
+    img: engineer,
+    url: "https://www.figma.com/proto/EoFcPwLlzWjIdIBVQhoyUw/Personas?node-id=460%3A852&scaling=scale-down"
   },
   {
-   text: "Think Tank Faciltator",
-   subtitle: "Experience Design Manager, Think Tank Facilitator",
-   img: thinkTank,
-   url: "https://www.figma.com/proto/EoFcPwLlzWjIdIBVQhoyUw/Personas?node-id=460%3A453&scaling=scale-down"
+    text: "Think Tank Faciltator",
+    subtitle: "Experience Design Manager, Think Tank Facilitator",
+    img: thinkTank,
+    url: "https://www.figma.com/proto/EoFcPwLlzWjIdIBVQhoyUw/Personas?node-id=460%3A453&scaling=scale-down"
   },
   {
-   text: "Design Thinking Instructor",
-   subtitle: "Design Thinking Instructor, Practitioner Training",
-   img: DTinstructor,
-   url: "https://www.figma.com/proto/EoFcPwLlzWjIdIBVQhoyUw/Personas?node-id=460%3A156&scaling=scale-down"
+    text: "Design Thinking Instructor",
+    subtitle: "Design Thinking Instructor, Practitioner Training",
+    img: DTinstructor,
+    url: "https://www.figma.com/proto/EoFcPwLlzWjIdIBVQhoyUw/Personas?node-id=460%3A156&scaling=scale-down"
   },
   {
-   text: "Design Thinking Strategist",
-   subtitle: "Design Thinking Strategist, Fundamentals Instructor",
-   img: DTstrategist,
-   url: "https://www.figma.com/proto/EoFcPwLlzWjIdIBVQhoyUw/Personas?node-id=460%3A153&scaling=scale-down"
+    text: "Design Thinking Strategist",
+    subtitle: "Design Thinking Strategist, Fundamentals Instructor",
+    img: DTstrategist,
+    url: "https://www.figma.com/proto/EoFcPwLlzWjIdIBVQhoyUw/Personas?node-id=460%3A153&scaling=scale-down"
   },
 ]
 
@@ -143,7 +165,7 @@ export const insightsData = {
   data: [
     {
       insightTitle: "Documentation from past research isn’t useful or understandable.",
-      insightText: "//TODO",
+      insightText: "If data can’t be found or understood it is not sustainable.<br/><br/> A Honda Engineer we interviewed described their research workflow as being largely based upon keyword searches within file systems and documents using: Ctrl-F to locate keywords that might indicate text or data to manually analyze. This is incredibly tedious, inefficient, and prone to both false positives and false negatives in the search for relevant information.<br/><br/> When talking to OnRamp students, we consistently heard that the data from previous teams was either absent or unusable. They said that all they had to work with were the final presentation and a few key contacts",
       quotes: [
         {
           quote: "I use Control-F a lot.",
@@ -157,7 +179,7 @@ export const insightsData = {
     },
     {
       insightTitle: "Clustering qualitative data is time consuming.",
-      insightText: "//TODO",
+      insightText: "We heard this from facilitators, and even experienced it ourselves. <br/><br/>The process of doing research and searching for insights within the data is absolutely necessary, but it takes a tremendous amount of time and effort.<br/><br/> The level of effort grows exponentially as the data set expands. Facilitators reported huge amounts of information to sort through, and while the process is not one that they would like fully automated, some assistance in this regard would be welcomed.",
       quotes: [
         {
           quote: "We spend a lot of time doing research, interviewing, taking notes, then clustering.  The process is good BUT it takes a lot of time. ",
@@ -171,7 +193,7 @@ export const insightsData = {
     },
     {
       insightTitle: "Sometimes shortcuts are made when synthesizing information.",
-      insightText: "//TODO",
+      insightText: "Because the process of working with data is so cumbersome, many people are not to spend their time uploading, labeling, and tagging information. <br/><br/>Even if repositories for data exist such as Microsoft Sharepoint or Google Drive, there is no guarantee and little incentive for people to publish their data to those shared drives when they could just as easily keep it locally on their machines. <br/><br/>It’s not unusual for it to get abandoned in personal devices or obscure folders.",
       quotes: [
         {
           quote: "I’ll often pull insights and quotes directly from my phone into a slide deck. Most interviews end up just staying on my phone.",
@@ -181,7 +203,7 @@ export const insightsData = {
     },
     {
       insightTitle: "Lost opportunities in future projects being able to build off past research.",
-      insightText: "//TODO",
+      insightText: "If there isn’t sufficient transparency and communication between groups, silos form and lead to costly inefficiencies. <br/><br/>The lack of a single shared gateway, and limitations placed on access to information in other divisions creates a situation where decisions are being made without all of the necessary information.<br/><br/> Projects may be taken on by different groups simultaneously without each other's knowledge. Ideally these groups would either work together, or one of the groups would take on another project.",
       quotes: [
         {
           quote: "There’s no one place to understand all the different research that has happened.",
@@ -195,7 +217,7 @@ export const insightsData = {
     },
     {
       insightTitle: "Security measures hinder teams in their ability to collaborate.",
-      insightText: "//TODO",
+      insightText: "A system that is fully secured, but unusable has no value.<br/><br/> Security is essential in any industry, but it also tends to lead to barriers for collaboration. Security, by definition, is intended to limit access to information. The irony is that any information worth securing must have significant value to the organization when in the hands of authorized users. When someone who should be authorized isn’t value is lost. <br/><br/>Today, people are finding ways to get around the problem by asking other people who are authorized to access the information for them, but that doesn’t scale to a global company like Honda, and while there may be processes in place to grant access when needed, currently they are far too difficult to navigate.",
       quotes: [
         {
           quote: "We don’t do a lot of what I would consider ‘Cloud sharing’. Within our own building it’s not too bad... But our LA office, they don’t have access to the same drives. So it becomes an issue.",
@@ -211,7 +233,7 @@ export const insightsData = {
   language: [
     {
       insightTitle: "Translation adds additional steps to the process.",
-      insightText: "//TODO",
+      insightText: "Collaboration requires some form of a shared language. <br/><br/> This can be a literal language barrier between native English and Japanese speakers, or a more nuanced language barrier between different disciplines within the company such as materials engineers and electrical engineers, or more broadly between engineering and design.<br/><br/>When language barriers exist, translation of some kind is required whether that takes the form of an interpreter or a data visualization that presents information more clearly.",
       quotes: [
         {
           quote: "Sometimes I struggle understanding the intentions of design decisions made from teams in other locations.",
@@ -225,7 +247,7 @@ export const insightsData = {
     },
     {
       insightTitle: "Alignment can’t be reached without conversation.",
-      insightText: "//TODO",
+      insightText: "Alignment between facilitators & their participants, but also with like-minded teams across an organization enables work to move forward, amplifies efficacy of projects, and prevents costly mistakes.<br/><br/>However, if teams are unable to communicate with each other, alignment is not attainable. <br/><br/>We’ve heard strong demand for alignment between groups within Honda, as well as within student teams made up of cross-disciplinary participants.",
       quotes: [
         {
           quote: "I want our team to be more integrated with other innovation labs within Honda, like 99P and HISV.",
@@ -239,7 +261,7 @@ export const insightsData = {
     },
     {
       insightTitle: "Having multiple perspectives helps drive the prototyping process.",
-      insightText: "//TODO",
+      insightText: "Perspective is a valuable commodity, and can be hard to find in teams made up entirely of people with the same backgrounds.<br/><br/>To combat this issue, engineers and team leaders turn to people outside of their group for feedback on prototypes that might not surface in their own organization.<br/><br/>Similarly, people in other groups can serve as the primary resource in the search for information. An engineer we talked to credited human sources as being superior to digital search tools.",
       quotes: [
         {
           quote: "We often consult other groups for expertise in order to get feedback on our prototypes.",
@@ -255,21 +277,21 @@ export const insightsData = {
   believe: [
     {
       insightTitle: "Persuasive presentations are key to moving research forward.",
-      insightText: "//TODO",
+      insightText: "It turns out that presentation materials played a critical role in pushing forward research in the problem spaces that people were working in. Both engineers and students mentioned how former presentation slides and posters made for great entryways into assessing the relevance of past research to their work. <br/><br/>Also, creating presentations of research allowed teams to have better dialogue with their Japanese counterparts. To overcome language barriers, we heard how visualizations played a key part in communication of work. ",
       quotes: [
         {
           quote: "Visuals are very important. Communicating to  Japanese leadership means it’s very important to be concise and clear in our wording and as much as possible to show things visually. ",
           author: "Engineer",
         },
         {
-          quote: "OnRamp students have a hard time handing off and presenting their work like a business proposal to Phase III companies or teams",
+          quote: "OnRamp students have a hard time handing off and presenting their work like a business proposal to Phase III companies or teams.",
           author: "OnRamp Student",
         },
       ]
     },
     {
       insightTitle: "Establishing trust and buy-in from executives is critical for pushing forward initiatives and projects at Honda.",
-      insightText: "//TODO",
+      insightText: "In addition, being able to communicate in effective ways is integral to establishing buy-in for supervisors.<br/><br/>So getting this higher level in this current reality becomes important, especially in the context of the difficulties in accessing, parsing, and assessing data you already have available. Due to these delays in understanding the problem space people use this higher level buy in to by-pass searching through data. From our findings, we found a quick shortcut to identifying credible research is by seeing if the Chief Engineer signed off on it. ",
       quotes: [
         {
           quote: "I tried to show a spreadsheet to communicate my findings and it went awful - figured out quickly, “What’s an easy way a middleschooler could see this?” ",

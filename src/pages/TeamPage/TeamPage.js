@@ -5,7 +5,7 @@ import teamPhoto from 'assets/images/team_photo.png';
 import squiggly from 'assets/images/squiggly.svg';
 import data from 'data/bios.js';
 
-import MediaQuery from 'react-responsive';
+// import MediaQuery from 'react-responsive';
 
 function listRowStyle(index) {
   return index % 2 ? styles.list__rowOffset : styles.list__row;

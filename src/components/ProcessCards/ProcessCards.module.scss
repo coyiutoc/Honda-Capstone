@@ -21,11 +21,12 @@
 }
 
 .card {
-  padding: 1.5rem; 
-  width: 30%;
+  padding: 2.2rem; 
+  width: 48%;
   border-radius: 10px;
   font-weight: bold;
   background-color: #ffffff;
+  margin-bottom: 3rem;
 
   @media screen and (max-width: $tablet) {
     display: flex;

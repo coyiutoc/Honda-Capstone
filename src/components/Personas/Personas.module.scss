@@ -16,14 +16,22 @@
 }
 
 .card {
-  padding: 1.5rem; 
-  width: 45%;
+  padding: 1.7rem; 
+  width: 47%;
   border-radius: 10px;
   font-weight: bold;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0.5rem 1rem 0.5rem 0rem;
+  margin: 1rem;
+
+ &:nth-of-type(2n+1) {
+  margin-left: 0;
+  }
+
+  &:nth-of-type(2n) {
+    margin-right: 0;
+  }
 
   @media screen and (max-width: $desktop) {
     display: flex;
@@ -31,6 +39,7 @@
     align-items: center;
     width: 100%;
     margin-left: 0;
+    margin-right: 0;
     
     >div {
       margin-right: 1rem;
@@ -38,11 +47,11 @@
   }
 
   &__img {
-    margin-right: 1rem;
+    margin-right: 1.5rem;
     height: 100%;
 
     > img {
-      height: 120px;
+      height: 84px;
       width: auto;
     }
   }
@@ -56,12 +65,14 @@
   }
 
   &__name {
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0.2em;;
   }
 
   &__subtitle {
     font-weight: normal;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   &__body p {
