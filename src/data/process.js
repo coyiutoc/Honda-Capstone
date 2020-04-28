@@ -285,7 +285,7 @@ export const insightsData = {
   understand: [
     {
       insightTitle: "Internal research storage lacks standardization.",
-      insightText: "//TODO",
+      insightText: "From our interviews and studies, we found that there was not a clear standardization in terms of how internal teams were organizing their research. Although teams may understand their internal research structure, this does not necessarily mean that other individuals from outside the team will be able to understand. <br><br>This pattern was found both in OnRamp teams, and within teams at Honda. For example, one OnRamp team was using both Google Drive and BaseCamp as a way to organize their research; however a student admitted that “it was tough [having to] jump” between these different documents, all stored on differing systems. Additionally, a Design Thinking Facilitator who had overseen multiple Honda projects noted that although they were storing their past projects on Github, the organization was “splintered” and still required greater standardization.",
       quotes: [
         {
           quote: "Our Google Drive can be very 'jumbled' for storing data, forms, & insights. It’s tough jumping between all these different docs.",
@@ -299,7 +299,7 @@ export const insightsData = {
     },
     {
       insightTitle: "There is risk of similar projects being created.",
-      insightText: "//TODO",
+      insightText: "As a consequence of poor research organization and standardization, being able to easily read, and identify past projects becomes difficult. <br><br> Firstly, employees already face great difficulty in surfacing past research in general, as evidenced by one Honda engineer commenting how there was no central repository storing all undertaken projects in the organization. <br><br> Inevitably, this inability to identify past projects produces silos of information, where teams may be carrying out similar kinds of projects. As seen in an interview with a Think Tank facilitators at Honda, this individual admitted that they had seen disparate teams producing the same kind of projects.",
       quotes: [
         {
           quote: "Honda doesn’t have one place to understand all the internal research that has happened.",
@@ -313,7 +313,7 @@ export const insightsData = {
     },
     {
       insightTitle: "Lack of standardization makes handoffs inefficient.",
-      insightText: "//TODO",
+      insightText: "An additional consequence of poor internal research organization is that handoffs become difficult and time-consuming. <br><br> One prime example is where a team of Honda engineers travelled all the way to Japan to go through the hand-off process; yet, despite having met the other team face-to-face, they still had difficulty understanding the background research and insights produced by the other team. <br><br> In a similar vein, one OnRamp student admitted that when receiving a project from their Phase I counterparts, the team had to spend a large amount of time trying to sift through and understand the research that had been done.",
       quotes: [
         {
           quote: "Our team had to fly out to Japan to do our hand-off process.",
@@ -327,7 +327,7 @@ export const insightsData = {
     },
     {
       insightTitle: "However, months or years of project knowledge is difficult to transfer without actual project involvement.",
-      insightText: "//TODO",
+      insightText: "However, we must acknowledge that an inefficient handoff process is not only a function of poor internal research organization, but also because it is extremely difficult to be able to pass knowledge and experience built from being immersed in any given project. <br><br> Some Honda teams are already trying to deal with this issue by “onboarding” individuals from the receiving team - essentially, these employees become involved towards the latter stages of the project, but have opportunities to understand how research has been organized, or ask for clarification from any of the current team members. ",
       quotes: [
         {
           quote: "Members of teams who will continue our project understand the project better if they actively participate.",

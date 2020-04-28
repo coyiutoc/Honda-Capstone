@@ -1,4 +1,5 @@
 import React from "react";
+import ReactHtmlParser from 'react-html-parser';
 import styles from 'components/Insights/Insights.module.scss';
 import { ReactSVG } from 'react-svg';
 import quoteImg from "assets/images/quote.svg";
@@ -16,7 +17,7 @@ const Insights = (props) => {
 
                   {/* TEXT */}
                   <div className={styles.insight__text}>
-                    {elem.insightText}
+                    {ReactHtmlParser(elem.insightText)}
                   </div>
                   {/* QUOTES */}
                   <div className={styles.insight__quotes}>
