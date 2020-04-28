@@ -1,13 +1,15 @@
-// Data for keytakeaways section:
-import k1 from 'assets/images/keytakeaway1.svg';
-import k2 from 'assets/images/keytakeaway2.svg';
-import k3 from 'assets/images/keytakeaway3.svg';
+// Images for opportunities section:
+import communicationSVG from 'assets/images/opportunities/communication.svg';
+import dataSVG from 'assets/images/opportunities/data.svg';
+import handoffSVG from 'assets/images/opportunities/handoff.svg';
+import trustSVG from 'assets/images/opportunities/trust.svg';
 
-// Data for research goals section:
+// Images for research goals section:
 import r1 from 'assets/images/research1.svg';
 import r2 from 'assets/images/research2.svg';
 import r3 from 'assets/images/research3.svg';
 
+// Images for personas:
 import student from 'assets/images/personas/student.png';
 import engineer from 'assets/images/personas/engineer.png';
 import thinkTank from 'assets/images/personas/thinkTank.png';
@@ -104,27 +106,27 @@ export const keyTakeawaysData = [
   {
     text: "Data Sustainability",
     body: ["How might we document and tag ongoing research so that data is searchable and usable by others?", "How might we Understand existing data without the researcher or team present to explain it?"],
-    img: k2
+    img: dataSVG
   },
   {
     text: "Communicating Research Findings",
     body: ["How might we design for multiple languages, cultures, or disciplines?",
       "How might we enable more cross-team collaboration and bring multiple perspectives to prototyping processes?"],
-    img: k1
+    img: communicationSVG
   },
   {
     text: "Communicating Research Credibility",
     body: ["How might we better evaluate and demonstrate the credibility of our research?",
       "How might we better demonstrate alignment to business strategy in our projects?"
     ],
-    img: k3
+    img: trustSVG
   },
   {
     text: "Improve Project Hand-offs",
     body: ["How might we make it easier to find past projects related to our own?",
       "How might we enable more efficient project hand-offs that do not require lengthy in-person visits?"
     ],
-    img: k3
+    img: handoffSVG
   },
 ]
 

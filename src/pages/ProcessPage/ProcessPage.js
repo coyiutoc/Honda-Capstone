@@ -17,7 +17,7 @@ import Insights from "components/Insights/Insights.js";
 const ProcessPage = () => {
 
   useEffect(() => {
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
     window.addEventListener("scroll", handleNavigationHighlight);
 
     return () => {
