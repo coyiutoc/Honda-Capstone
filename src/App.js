@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
@@ -14,7 +14,7 @@ import routes from "routes.js";
 
 function App() {
   return (
-    <Router>
+    <Router basename='/'>
       <div>
         <Navigation />
         <Switch>
