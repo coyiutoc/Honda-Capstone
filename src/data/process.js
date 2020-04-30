@@ -167,7 +167,7 @@ export const insightsData = {
   data: [
     {
       insightTitle: "Documentation from past research isn’t useful or understandable.",
-      insightText: "If data can’t be found or understood it is not sustainable.<br/><br/> A Honda Engineer we interviewed described their research workflow as being largely based upon keyword searches within file systems and documents using: Ctrl-F to locate keywords that might indicate text or data to manually analyze. This is incredibly tedious, inefficient, and prone to both false positives and false negatives in the search for relevant information.<br/><br/> When talking to OnRamp students, we consistently heard that the data from previous teams was either absent or unusable. They said that all they had to work with were the final presentation and a few key contacts",
+      insightText: "If data can't be found or understood it is not sustainable.<br/><br/>An engineer described browsing files using Ctrl-F to locate keywords that might indicate usable data. This is incredibly tedious and inefficient.<br/><br/>Students said that data from previous teams was absent or unusable, and that all they only used the presentation and contacts.",
       quotes: [
         {
           quote: "I use Control-F a lot.",
